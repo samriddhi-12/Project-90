@@ -5,8 +5,8 @@ player2_name=localStorage.getItem("player2_name");
 player1_score=0;
 player2_score=0;
 
-document.getElementById("player1_name").innerHTML=player1_name + ":";
-document.getElementById("player2_name").innerHTML=player2_name + ":";
+document.getElementById("player1_name").innerHTML=player1_name + " : ";
+document.getElementById("player2_name").innerHTML=player2_name + " : ";
 
 document.getElementById("player1_score").innerHTML=player1_score;
 document.getElementById("player2_score").innerHTML=player2_score;
@@ -15,8 +15,9 @@ document.getElementById("player_question").innerHTML="Question turn -" + player1
 document.getElementById("player_answer").innerHTML="Answer turn -" + player2_name;
 
 function send()
-{ n1 = document.getElementById("SentN1").value;
- n2 = document.getElementById("SentN2").value; 
+{ 
+n1 = document.getElementById("SentN1").value;
+n2 = document.getElementById("SentN2").value; 
 RealAnswer = parseInt(n1) * parseInt(n2);
 questionWord = "<h4 id = 'word_display'>Math Question - If answer is a decimal round it off to the nearest whole number: " + n1 + "*" + n2 + "</h4>"; 
 inputBox = "<br><br><input id = 'input_check_box' type = 'text' placeholder = 'Answer'></input>"; 
